@@ -15,9 +15,11 @@ navlinks.addEventListener('click', (event) => {
         mobileNavbar.classList.remove('active'); // Remove a classe active ao clicar em um link
     }
 });
-//box-shadow if window scrollY > 0
+
+//efeito de box-shadow quando a window (janela) tiver um valor de scrollY > 0
 window.addEventListener('scroll', function() {
     if (this.window.scrollY > 0) return navbar.classList.add('active');
         return navbar.classList.remove('active');
     });
 });
+
